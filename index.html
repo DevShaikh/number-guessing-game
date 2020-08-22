@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Number Guesser Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        /* The image used */
+          background-image: url("img/back.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .form-control:focus {
+        border-color: #17a2b8;
+        box-shadow: 0 0 0 0.2rem rgb(23 162 184 / 35%);
+      }
+      #guess-Btn {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div id="card" class="card shadow pt-4 my-4 text-center">
+            <h3 class="border-bottom border-secondary-dark pb-3">Number Guesser Game</h3>
+            <h6 class="my-2">Guess number between <span class="min-num"></span> to <span class="max-num"></span></h6>
+            <form id="game" class="form-group px-5 my-1">
+              <div class="input-group">
+                <input type="number" class="form-control" id="guess-input" placeholder="Enter your guess number">
+                <input type="submit" value="Submit" id="guess-btn" class="btn btn-info">
+              </div>
+              <p id="msg" class="mt-2"></p>
+            </form>
+            <p class="border-top border-secondary-dark pt-2 mt-4 mb-2">Developed by Ahmed Shaikh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/Jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
